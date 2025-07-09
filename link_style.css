@@ -1,0 +1,33 @@
+/* 基础链接样式 - 极简版 */
+a {
+    color: #1a73e8; /* 清爽的谷歌蓝 */
+    text-decoration: none;
+    transition: color 0.15s ease;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px; /* 防止下划线跳动 */
+  }
+  
+  /* 悬停效果 - 仅保留底部细线 */
+  a:hover {
+    color: #0d5bba; /* 稍深的蓝色 */
+    border-bottom: 1px solid currentColor;
+  }
+  
+  /* 已访问链接 - 轻微淡化 */
+  a:visited {
+    color: #5f5fc4; /* 柔和的紫色 */
+  }
+  
+  /* 特殊情况下的链接样式 */
+  /* 无下划线变体 */
+  a.no-underline:hover {
+    border-bottom: none;
+  }
+  
+  /* 深色背景上的链接 */
+  a.on-dark {
+    color: #8ab4f8; /* 浅蓝色 */
+  }
+  a.on-dark:hover {
+    color: #b8d3ff;
+  }

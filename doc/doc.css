@@ -1,0 +1,25 @@
+.container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 代码块样式 */
+.code {
+    background-color: #f0f0f0;
+    padding: 12px 15px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px 0;
+    overflow-x: auto;
+}
+
+/* 笔记样式 */
+.note {
+    background-color: #e7f4ff;
+    border-left: 4px solid #3498db;
+    padding: 12px 15px;
+    margin: 15px 0;
+}
