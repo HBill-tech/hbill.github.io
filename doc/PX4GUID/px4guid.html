@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用QGroundControl查看飞控序列号</title>
+    <link rel="stylesheet" href="../doc.css">
+    <link rel="stylesheet" href="../../link_style.css">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../font.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>使用QGroundControl查看飞控序列号</h1>
+        <div class="note">
+            <p>打开 QGroundControl， 找到 Analyze Tools 选项，进入后打开 MAVLink Console。</p>
+            <p>输入以下命令查看飞控信息</p>
+            <div class="code">ver all</div>
+            <p>MAVLink Console 输出如下</p>
+            <div class="code">
+                HW arch: HOLYBRO_KAKUTEH7<br>
+                FW git-hash: 4649f6672ca6d7150ee2d5a43ff2f9db69353047<br>
+                FW version: 1.13.3 0 (17629952)<br>
+                FW git-branch: master_v1.13.3<br>
+                OS: NuttX<br>
+                OS version: Release 11.0.0 (184549631)<br>
+                OS git-hash: 4a1dd8680cd29f51fb0fe66dcfbf6f69bec747cf<br>
+                Build datetime: Sep 20 2025 19:00:46<br>
+                Build uri: localhost<br>
+                Build variant: default<br>
+                Toolchain: GNU GCC, 9.3.1 20200408 (release)<br>
+                PX4GUID: 00060000000038303334343051060034001c<br>
+                MCU: STM32H7[4|5]xxx, rev. V<br>
+            </div>
+            <p>这里的PX4GUID: 00060000000038303334343051060034001c就是飞控序列号</p>
+        </div>
+        <a href="../../index.html">返回主页</a>
+    </div>
+</body>
+
+</html>
