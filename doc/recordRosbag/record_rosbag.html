@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用QGroundControl查看飞控序列号</title>
+    <link rel="stylesheet" href="../doc.css">
+    <link rel="stylesheet" href="../../link_style.css">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../font.css">
+    <script src="../../scripts/componet.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <hdoc-title>如何录制rosbag</hdoc-title>
+        <div class="note">
+            <p>首先，启动传感器，输入以下命令查看当前的rostopic有哪些。</p>
+            <div class="code">rostopic list</div>
+            <p>输入以下命令，录制当前所有的rostopic</p>
+            <div class="code">rosbag record -a</div>
+            <p>使用 Ctrl + C 切断录制，此时录制的rosbag文件保存在了当前目录下</p>
+        </div>
+        <a href="../../index.html">返回主页</a>
+    </div>
+</body>
+
+</html>

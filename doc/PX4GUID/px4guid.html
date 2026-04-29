@@ -9,18 +9,12 @@
     <link rel="stylesheet" href="../../link_style.css">
     <link rel="stylesheet" href="../../index.css">
     <link rel="stylesheet" href="../../font.css">
-    <style>
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    </style>
+    <script src="../../scripts/componet.js" defer></script>
 </head>
 
 <body>
     <div class="container">
-        <h1>使用QGroundControl查看飞控序列号</h1>
+        <hdoc-title>使用QGroundControl查看飞控序列号</hdoc-title>
         <div class="note">
             <p>打开 QGroundControl， 找到 Analyze Tools 选项，进入后打开 MAVLink Console。</p>
             <p>输入以下命令查看飞控信息</p>
@@ -41,7 +35,8 @@
                 PX4GUID: 00060000000038303334343051060034001c<br>
                 MCU: STM32H7[4|5]xxx, rev. V<br>
             </div>
-            <p>这里的PX4GUID: 00060000000038303334343051060034001c就是飞控序列号</p>
+            <p>这里的PX4GUID: 00060000000038303334343051060034001c就是飞控序列号。</p>
+            <p>有些飞控的序列号是不能通过 ver all 命令查看的，比如pixhauk飞控。这些飞控通常会直接广播出来，在QGC的日志中可以看到。</p>
         </div>
         <a href="../../index.html">返回主页</a>
     </div>
